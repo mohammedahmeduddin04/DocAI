@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocAI - Comprehensive Healthcare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          borderRadius: {
+            'ios': '20px',
+            'ios-xl': '32px',
+            'ios-2xl': '44px',
+          },
+          colors: {
+            ios: {
+              grey: '#F2F2F7',
+              'grey-dark': '#1C1C1E',
+              blue: '#007AFF',
+              green: '#34C759',
+              red: '#FF3B30',
+              orange: '#FF9500',
+              indigo: '#5856D6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ios-bg-light: #F2F2F7;
+      --ios-bg-dark: #000000;
+    }
+    * {
+      transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                  border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                  color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                  box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  opacity 0.4s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--ios-bg-light);
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    html.dark body {
+      background-color: var(--ios-bg-dark);
+      color: #FFFFFF;
+    }
+    .glass {
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+    }
+    /* iOS Momentum Scrolling */
+    .scroll-ios {
+      -webkit-overflow-scrolling: touch;
+    }
+    /* SF-Style Buttons */
+    .btn-ios-active {
+      transform: scale(0.96);
+      opacity: 0.8;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

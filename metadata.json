@@ -1,0 +1,7 @@
+{
+  "name": "DocAI Healthcare Platform",
+  "description": "A comprehensive healthcare diagnostic platform featuring AI disease prediction, a doctor verification system, and administrative outbreak monitoring with geographic mapping.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
